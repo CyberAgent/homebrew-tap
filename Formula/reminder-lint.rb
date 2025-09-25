@@ -1,20 +1,20 @@
 class ReminderLint < Formula
   desc "reminder-lint command line tool."
   homepage "https://github.com/CyberAgent/reminder-lint"
-  version "0.2.0"
+  version "0.2.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/CyberAgent/reminder-lint/releases/download/0.2.0/reminder-lint-aarch64-apple-darwin.tar.xz"
-      sha256 "aa9e7603fb7556636c1f28309d8a85c74f1df72c23e27a3c4fc9c444715a759c"
+      url "https://github.com/CyberAgent/reminder-lint/releases/download/0.2.1/reminder-lint-aarch64-apple-darwin.tar.xz"
+      sha256 "e80e1db0495f3916d34dd9ecddf54848efef020729625084963915be72b51c3b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/CyberAgent/reminder-lint/releases/download/0.2.0/reminder-lint-x86_64-apple-darwin.tar.xz"
-      sha256 "ccf6856699b066e3280149c7430a95cad1f9056f464360ec6e14c36c546d5802"
+      url "https://github.com/CyberAgent/reminder-lint/releases/download/0.2.1/reminder-lint-x86_64-apple-darwin.tar.xz"
+      sha256 "09ceadff298c7be62a26f13bb9fe23ba53d68c10619af5d738caadfe020b99c4"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/CyberAgent/reminder-lint/releases/download/0.2.0/reminder-lint-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "6fe6b3c8a5fe9c234480d9a6be16860e82a6bddc996de6c0d00a605de4c8d423"
+    url "https://github.com/CyberAgent/reminder-lint/releases/download/0.2.1/reminder-lint-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "689bf62ea92f0fba8562984604924af94e8b35ce85a1a6bd89d44fddbad20f66"
   end
 
   BINARY_ALIASES = {
